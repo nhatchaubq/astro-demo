@@ -1,0 +1,11 @@
+---
+const menus = [
+  ["/", "Home"],
+  ["/about", "About"],
+  ["/blog", "Blog"],
+];
+---
+
+<div class="flex gap-3 justify-center">
+  {menus.map(([to, label]) => <a href={to}>{label}</a>)}
+</div>
